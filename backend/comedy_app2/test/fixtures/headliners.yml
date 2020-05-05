@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  length: 1
+  political: 1
+  controversial: 1
+  dirty: 1
+  opinionated: 1
+
+two:
+  name: MyString
+  length: 1
+  political: 1
+  controversial: 1
+  dirty: 1
+  opinionated: 1
