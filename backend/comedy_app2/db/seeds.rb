@@ -78,3 +78,7 @@ Opener.create(name: "Jim Jeffries", length: 3, political: 3, controversial: 4, d
 Opener.create(name: "Lenny Bruce", length: 4, political: 2, controversial: 5, dirty: 4, opinionated: 5, headliner: carlin)
 Opener.create(name: "Stewart Lee", length: 3, political: 2, controversial: 4, dirty: 3, opinionated: 5, headliner: carlin)
 Opener.create(name: "Shane Mauss", length: 2, political: 2, controversial: 3, dirty: 3, opinionated: 4, headliner: carlin)
+
+
+
+request = RestClient.get()

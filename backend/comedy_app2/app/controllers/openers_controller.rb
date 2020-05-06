@@ -19,6 +19,5 @@ class OpenersController < ApplicationController
             opinionated:params[:opinionated],
             headliner_id:params[:headliner_id])
             redirect_to "http://localhost:3001"
-        )
     end
 end

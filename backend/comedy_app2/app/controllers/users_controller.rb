@@ -22,7 +22,10 @@ class UsersController < ApplicationController
 
   
     def create
-        @user = User.create(user_pa rams)
+        @user = User.create(
+            name:params[:name],
+            password:[:password])
+            redirect_to "http://localhost:3001"
         render json: @user
         #trying to git commit
     end
