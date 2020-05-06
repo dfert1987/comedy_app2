@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Opener.destroy_all
 Headliner.destroy_all
+
 
 chappelle = Headliner.create(name: "Dave Chappelle", length: 3, political: 3, controversial: 4, dirty: 4, opinionated: 5, image: "https://www.biography.com/.image/t_share/MTQzMzA3MzU5NDg4MzIxMDk2/dave-chappelle_gettyimages-481295252jpg.jpg" )
 louis = Headliner.create(name: "Louis CK", length: 2, political: 3, controversial: 5, dirty: 5, opinionated: 3, image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Louis_CK_2012_Shankbone.JPG")
@@ -80,5 +81,3 @@ Opener.create(name: "Stewart Lee", length: 3, political: 2, controversial: 4, di
 Opener.create(name: "Shane Mauss", length: 2, political: 2, controversial: 3, dirty: 3, opinionated: 4, headliner: carlin)
 
 
-
-request = RestClient.get()

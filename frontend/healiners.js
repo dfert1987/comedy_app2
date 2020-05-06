@@ -7,6 +7,7 @@ fetch("http://localhost:3000/headliners/")
 .then(headliners => showHeadliners(headliners));
 
 function showHeadliners(headliners) {
+    console.log(headliners)
     headliners.forEach(headliner => {
         const allHeadlinersName = document.createElement('h2');
         const allHeadlinersImage = document.createElement('div');
