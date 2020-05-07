@@ -4,7 +4,7 @@ class UsersController < ApplicationController
             render json: @users
             
         end
-    end
+
 
     def show
             @user = User.find(params[:id])
@@ -19,12 +19,11 @@ class UsersController < ApplicationController
         @user = User.create(
             name:params[:name],
             password:[:password])
-            render json: @user
+            # render json: @user
 
             redirect_to "http://localhost:3001"
-        #trying to git commit
     end
-
+end
 
 
 

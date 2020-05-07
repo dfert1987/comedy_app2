@@ -8,4 +8,5 @@ class HeadlinersController < ApplicationController
         @headliner = Headliner.find(params[:id])
         render json: @headliner
     end
+
 end

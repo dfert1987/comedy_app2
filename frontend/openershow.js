@@ -1,5 +1,9 @@
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
+const input = document.querySelector("#headliner-id")
+input.value = id
+
+
 
 fetch(`http://localhost:3000/headliners/${id}`)
     .then(response => response.json())
@@ -20,7 +24,6 @@ function getOpeners(openers) {
     openers.forEach(opener => {
        if (opener.headliner_id == id)  { 
        const showOpener = document.createElement('h3')
-    //    showOpener.innerText = `${opener.name}`
        showOpener.innerHTML= `<a href="openerwork.html?id=${opener.id}">${opener.name}</a>`
        console.log(opener.id)
        document.body.append(showOpener)

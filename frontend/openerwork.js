@@ -16,11 +16,16 @@ fetch(`http://localhost:3000/openers/${id}`)
         .then(artist => {
             console.log(artist)
             getOpenerPic(artist.data[0].picture_medium)
+            getURL(artist.data[0].link)
+
         })
     }
 
-    function getURL() {
-
+    function getURL(opener) {
+        const link = document.createElement('h2')
+        link.innerText = "artist page"
+        link.innerHTML = `<a href="${opener}">Check Out Comedian Page</a>`
+        document.body.append(link)
     }
 
 
