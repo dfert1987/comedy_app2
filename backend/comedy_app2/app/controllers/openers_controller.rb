@@ -1,5 +1,9 @@
 class OpenersController < ApplicationController
     def index
+        if params[:search]
+            @openers = Opener.where("name LIKE ?", "%#{params[:search]}%")
+            render json: @openers
+        else
         @openers = Opener.all
         render json: @openers, include: [:headliner]
     end
@@ -22,4 +26,5 @@ class OpenersController < ApplicationController
             # render json: @opener
             redirect_to "http://localhost:3001/openershow.html?#{params[:headliner_id]}"
     end
+end
 end
