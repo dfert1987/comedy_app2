@@ -15,6 +15,7 @@ class OpenersController < ApplicationController
 
     def update
         @opener = Opener.find(params[:id])
+        
         @opener.update(
             name: params[:name],
             length: params[:length],

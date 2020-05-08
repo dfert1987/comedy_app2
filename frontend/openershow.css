@@ -1,6 +1,8 @@
 
 
-
+body {
+    background-image: url("https://i.imgur.com/z57GiIr.jpg");
+}
 form {
     position: relative;
     top: 400px;
@@ -8,22 +10,25 @@ form {
 
 h2 {
     position: relative;
-    top: -150px;
+    top: -145px;
     font-family: "Bebas Neue";
     font-size: 40px;
     text-align: center;
 } 
 
 a:link {
-    color: #f14e4e;
+    color: white;
     font-family: "Bebas Neue";
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: -90-0px;
     text-shadow: 2px 2px 4px black;
     
 
   }
   a:visited {
-    color: white;
+    color: rgb(235, 43, 43);
   }
 
   a {
@@ -34,7 +39,7 @@ a:link {
   .add_title {
     position: relative;
     top: 30px;
-    text-align: left
+    text-align: center;
 
   }
 
@@ -44,11 +49,13 @@ a:link {
 
   form {
       position: relative;
-      top: 450px;
+      top: 500px;
+      text-align: center;
+   
   }
   .add {
     padding:0.3em 1.2em;
-    background-color #f14e4e;
+    background-color: #f14e4e;
     margin:0 0.1em 0.1em 0;
     border:0.16em solid rgba(255,255,255,0);
     border-radius:2em;
@@ -65,3 +72,14 @@ a:link {
     border-color: black
     }
   
+    label {
+        font-family: 'Fjalla One';
+        text-align: center;
+        font-size: 20px;
+    }
+   
+
+h3 {
+    text-align: center;
+    
+}
