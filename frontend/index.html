@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comedy HQ</title>
+    <link rel="stylesheet" type="text/css" href="stylesheetindex.css">
     <script src="index.js" defer></script>
 
 </head>
 <body>
-    <h1>Welcome to Comedy HQ</h1>
-
-    <form>
+    <h1 class="title">Welcome to Comedy HQ</h1>
+    
+        <div class="w3-card-4">
+    <img src="https://i.imgur.com/10cs18X.jpg" height = 250px  alt="Comedy HQ Logo"/>
+    </div>
+    <form class="headliner_form">
         <h2>Head Inside to Checkout the Headliners!</h2>
-       <button><a href="headliners.html">View Headliners</a> </button>
-    </form>
+        <a href="headliners.html" class="button4" style="background-color:#f14e4e; font-color: white">View Headliners</a>  
+      </form>
+        <h3 class="search_text">Or Search for a Comedian in our Database Below!</h3>
 
-    <h3>Or Search for a Comedian in our Database Below!</h3>
-    <form method="GET" action ="http://localhost:3001/">
-        <input type="text"  name="search" placeholder="search by name">
-        <input type="submit" value="search">
+<div class="wrapper">
+    <form class="search_form" method="GET" action ="http://localhost:3001/">
+        <input class="search_text" type="text"  name="search" placeholder="search by name">
+        <input class="search_button" type="submit" value="search">
     </form>
-    <h4> 
-    </h4>
+</div>
+  
+<div class="column"></div>
+
+</div>
 
 
 </body>

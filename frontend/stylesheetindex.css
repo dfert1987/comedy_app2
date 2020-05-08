@@ -1,0 +1,121 @@
+body {
+    background-image: url("https://i.imgur.com/z57GiIr.jpg");
+    
+}
+
+.title {
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 80px;
+    text-shadow: 4px 4px 8px whitesmoke;
+    margin: 2;
+    
+}
+
+.w3-card-4 {
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+.headliner_form {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px whitesmoke;
+    font-family: "Fjalla One";
+    position: relative;
+
+}
+button {
+    position: relative;
+    top: -20px;
+ link: black;
+}
+
+#search_opener {
+    text-align: center;
+    position: relative;
+    top: 40px
+    
+}
+
+.search_text {
+    font-size: 25px;
+    font-family: "Fjalla One";
+    text-shadow: 2px 2px 3px whitesmoke;
+
+}
+
+.button4 {
+        
+        padding:0.3em 1.2em;
+        margin:0 0.1em 0.1em 0;
+        border: solid rgba(255,255,255,0);
+        box-sizing: border-box;
+        font-family:'Fjalla One';
+        font-weight:300;
+        color:#FFFFFF;
+        text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+        text-align:center;
+        transition: all 0.2s;
+        }
+        .button4:hover{
+        border-color: rgba(255,255,255,1);
+        }
+        
+    .wrapper {
+        position: relative;
+        display: flex;
+        min-width: 100px;
+        text-align: center;
+    }
+
+    .search_text{
+        text-align: center;
+    }
+
+    .search_button{
+       
+  width: 20%;
+  padding: 10px;
+  background: #f14e4e;
+  color: white;
+  position: relative;
+  top: -4px;
+  font-family:'Fjalla One';
+  font-size: 14px;
+  border: 1px solid grey;
+  /* Prevent double borders */
+  cursor: pointer;
+}
+.search_button:hover{
+    border-color: rgba(255,255,255,1);
+    }
+    
+
+    .search_form {
+        height: 20px;    
+        width: 100%;    
+        padding: 2px 23px 2px 30px;
+        outline: 0;
+
+    }
+
+    a:link {
+        color: #f14e4e;
+        text-shadow: 2px 2px 4px black;
+      }
+      a:visited {
+        color: white;
+      }
+h4 {
+    text-align: center;
+    position: relative;
+    font-family: "Bebas Neue";
+
+    top: 40px;
+    font-size: 26px;
+}

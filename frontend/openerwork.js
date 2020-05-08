@@ -1,5 +1,7 @@
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
+const input = document.querySelector("#opener-id")
+input.value = id
 
 
 fetch(`http://localhost:3000/openers/${id}`)
@@ -52,8 +54,8 @@ fetch(`http://localhost:3000/openers/${id}`)
         subHeader.innerText = "On a scale of 1-5"
         stats.innerText = `Length: ${opener.length}, Political leaning (lower is more liberal): ${opener.political}, Controversial: ${opener.controversial}, Dirty: ${opener.dirty}, Opinionated: ${opener.opinionated}`
         document.body.append(header, subHeader, stats)
-        
 
-        
     }
+    
+
     

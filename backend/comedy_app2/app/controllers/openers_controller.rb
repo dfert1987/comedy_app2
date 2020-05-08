@@ -13,6 +13,21 @@ class OpenersController < ApplicationController
         render json: @opener, include: [:headliner]
     end
 
+    def update
+        @opener = Opener.find(params[:id])
+        @opener.update(
+            name: params[:name],
+            length: params[:length],
+            political: params[:political],
+            controversial: params[:controversial],
+            dirty: params[:dirty],
+            opinionated: params[:opinionated],
+            headliner_id: params[:headliner_id]
+        )
+        redirect_to "http://localhost:3001/openerwork.html?id=#{params[:opener_id]}"
+
+    end
+
     def create
         @opener = Opener.create(
             name: params[:name],
@@ -24,7 +39,7 @@ class OpenersController < ApplicationController
             headliner_id: params[:headliner_id]
             ) 
             # render json: @opener
-            redirect_to "http://localhost:3001/openershow.html?#{params[:headliner_id]}"
+            redirect_to "http://localhost:3001/openershow.html?id=#{params[:headliner_id]}"
     end
 end
 end

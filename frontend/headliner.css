@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    font-family: "bebas neue";
+    font-size: 60px;
+}
+
+h2{
+    text-align: center;
+    font-family: "bebas neue";
+    font-size: 35px;
+    position: relative;
+    top: 40px
+}
+
+a:link {
+    color: #f14e4e;
+    text-shadow: 2px 2px 4px black;
+  }
+  a:visited {
+    color: white;
+  }
+
+  .card {
+    text-align: center;
+    display: grid; 
+    grid-auto-rows: auto;
+    grid-gap: .5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-top: 50px;
+    flex-direction: column;
+    -ms-flex-align: flex-end;
+    display: flex;
+    background-image: url("https://i.imgur.com/LMk895i.jpg")
+    
+ 
+  }
+body {
+    background-image:  url("https://i.imgur.com/z57GiIr.jpg");
+}
+
+p {
+    font-family: "Fjalla One";
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+
+}
+

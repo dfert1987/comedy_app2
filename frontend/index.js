@@ -1,5 +1,6 @@
 let openersURL;
 
+const searchSection = document.getElementById('search-opener')
 const queryParams = new URLSearchParams(window.location.search);
 const search = queryParams.get("search");
 if (search) {
@@ -19,6 +20,6 @@ function showOpeners(openers) {
         const allOpenersName = document.createElement('h4');
         allOpeners = openers
         allOpenersName.innerHTML = `<a href="openerwork.html?id=${opener.id}">${opener.name}</a>`
-        document.body.append(allOpenersName)
+        document.body.appendChild(allOpenersName)
     })
 }
