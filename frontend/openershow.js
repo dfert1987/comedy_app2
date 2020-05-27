@@ -28,10 +28,13 @@ function displayHeader(headliner) {
 
 function getOpeners(openers) {
     openers.forEach(opener => {
+
        if (opener.headliner_id == id)  { 
+       const openerCard = document.createElement('div');
        const showOpener = document.createElement('h3');
+
        showOpener.innerHTML= `<a href="openerwork.html?id=${opener.id}">${opener.name}</a>`
-       console.log(opener.id)
+       
        document.body.append(showOpener)
        }
     })

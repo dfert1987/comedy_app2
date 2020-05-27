@@ -4,59 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opener Page</title>
+    <link rel="stylesheet" type="text/css" href="openerwork.css">
+
     <script src="openerwork.js" defer></script>
 
 </head>
 <body>
-
+    <div class="home">
     <a href="/">Home</a>
-    <form method= "POST" action="http://localhost:3000/openers">
+</div>
+    <form class="update" method= "POST" action="">
         <h3>Update Comedian's Ratings</h3>
         <input type="hidden" name="opener_id" id="opener-id">
         <label for="length">Joke Length</label>
         <select name="length" id="length">
             <option value=1>1</option>
             <option value=2>2</option>
-            <option value=2>3</option>
-            <option value=2>4</option>
-            <option value=2>5</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
         </select>
         <label for="political">Political</label>
         <select name="political" id="political">
             <option value=1>1</option>
             <option value=2>2</option>
-            <option value=2>3</option>
-            <option value=2>4</option>
-            <option value=2>5</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
         </select>
         <label for="controversial">Controversial</label>
         <select name="controversial" id="controversial">
             <option value=1>1</option>
             <option value=2>2</option>
-            <option value=2>3</option>
-            <option value=2>4</option>
-            <option value=2>5</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
         </select>
         <label for="dirty">Dirty</label>
         <select name="dirty" id="dirty">
             <option value=1>1</option>
             <option value=2>2</option>
-            <option value=2>3</option>
-            <option value=2>4</option>
-            <option value=2>5</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
         </select>
         <label for="opinionated">Opinionated</label>
         <select name="opinionated" id="opinionated">
             <option value=1>1</option>
             <option value=2>2</option>
-            <option value=2>3</option>
-            <option value=2>4</option>
-            <option value=2>5</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
         </select>
-        <input type="hidden" name="headliner_id" id="headliner-id"/>
+        <input type="hidden" name="headliner_id" id="headliner-id" />
         <input type="submit">
         <!-- <button type="button">update</button>  -->
         </form>
+       
     
 </body>
 </html>

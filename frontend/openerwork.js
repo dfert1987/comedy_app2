@@ -2,6 +2,8 @@ const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
 const input = document.querySelector("#opener-id")
 input.value = id
+const update_form = document.querySelector(".update")
+update_form.action = `http://localhost:3000/openers/${id}`
 
 
 fetch(`http://localhost:3000/openers/${id}`)
@@ -30,7 +32,7 @@ fetch(`http://localhost:3000/openers/${id}`)
         document.body.append(link)
     }
 
-
+    aJtipNgqudrKMoVraEuWWnCYuPRanWGKRDNnujKI
     function getOpenerPic(url) {
         const image = document.createElement('img')
         image.src = url
@@ -39,6 +41,7 @@ fetch(`http://localhost:3000/openers/${id}`)
     }
 
     function displayHeader(opener) {
+        console.log(opener)
         const h2 = document.createElement('h2')
         h2.innerText = `Here's some stuff by ${opener.name}`
         document.body.append(h2)
